@@ -2,14 +2,21 @@
 /**
  * main - a program that prints the alphabet in lowercase
  * followed by a new line
+ * Except q and e
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int ch;
+	char ch = 'a';
 
-	for (ch = 'a'; ch <= 'z'; ch++; ch != 'q' && ch != 'e')
-		putchar(ch);
+	while (ch <= 'z')
+	{
+		if(ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		ch++;
+	}
 	putchar('\n');
 	return (0);
 }
