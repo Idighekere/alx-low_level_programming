@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * man - Prints the sum of all multiple of 3 or 5 up to 1024
+ * main - Prints the sum of all multiple of 3 or 5 up to 1024
  * Return: Always (Success)
  */
 
