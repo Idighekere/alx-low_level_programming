@@ -3,7 +3,7 @@
 /**
  * puts2 - A program that prints every other character of a strijng
  * starting with the first character, followed by a new line
- * @s: input
+ * @str: input
  * Return: print
  */
 void puts2(char *str)
