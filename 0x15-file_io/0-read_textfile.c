@@ -32,7 +32,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		}
 		total_bytes_read = total_bytes_read + byteread;
-	} while ((byteread = read(fildes, buff, sizeof(buff))) > 0 && total_bytes_read < (ssize_t)letters);
+	} while ((byteread = read(fildes, buff, sizeof(buff))) > 0 &&
+			total_bytes_read < (ssize_t)letters);
 
 	close(fildes);
 	return (total_bytes_read);
